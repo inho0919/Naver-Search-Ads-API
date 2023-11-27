@@ -5,7 +5,7 @@
     function keyword_data()
     {
         # [키워드 파일 읽기]
-        $path = "keyword.csv";
+        $path = "estimate.csv";
         $fp = fopen($path, "r");
         
         # [키워드 데이터]
@@ -41,7 +41,7 @@
     function csv($data)
     {
         # [CSV로 저장]
-        $file_path_in_server = "keyword_estimate.csv";
+        $file_path_in_server = "estimate_result.csv";
         $file = fopen($file_path_in_server, 'w'. 'euc-kr');
         fwrite($file, "\xEF\xBB\xBF");
 
